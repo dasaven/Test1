@@ -1,0 +1,202 @@
+body {
+  padding: 10px;
+}
+
+div {
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    margin-left:20px;
+}
+.disp {
+    float:left;
+}
+.disp div {
+    float:left;
+    max-width:600px;
+}
+.stitched {
+   background: Blue;
+   color: yellow;
+   border: 2px dashed yellow;
+   border-radius: 7px;
+   box-shadow: 0 0 0 4px Blue, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px DarkBlue;
+}
+.stitched2 {
+   background: #ff0030;
+   color: #fff;
+   border: 2px dashed #fff;
+   box-shadow: 0 0 0 4px #ff0030, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #aa3030;
+}
+.engraved {
+   background: #777;
+   color: #FFF;
+   border: 1px solid #111;
+   border-radius: 7px;
+   box-shadow: 0 0 0 4px #777, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+.engraved2 {
+   background: #777;
+   color: #FFF;
+   border: 1px solid #111;
+   box-shadow: 0 0 0 4px #777, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+
+.kodaky {
+   background: #444;
+   color: #FFF;
+   border: 4px solid #FFF;
+   border-bottom: 25px solid #FFF;
+   box-shadow:0 0 0 1px #EEE, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+.kodaky2 {
+   background: #444;
+   color: #FFF;
+   border: 4px solid #FFF;
+   border-bottom: 25px solid #FFF;
+   box-shadow:0 0 0 1px #EEE, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+.kodaky3 {
+   background: #444;
+   color: #FFF;
+   border: 6px solid #FFF;
+   border-bottom: 25px solid #FFF;
+   box-shadow:0 0 0 1px #EEE, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+.ipadDark {
+   background: #444;
+   color: #fff;
+   border: 10px solid #DDD;
+   border-radius: 7px;
+   box-shadow:0 0 0 1px #CCC, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+
+}
+.ipadLight {
+   background: #444;
+   color: #FFF;
+   border: 10px solid #FFF;
+   border-radius: 7px;
+   box-shadow:0 0 0 1px #EEE, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+.ipadColor {
+   background: #FFF;
+   color: #111;
+   border: 10px solid #DDD;
+   border-radius: 7px;
+   box-shadow:0 0 0 1px #CCC, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #AAA;
+}
+
+
+.tv {
+   background: #000;
+   color: #FFF;
+   border: 1px solid #888;
+   border-radius: 7px;
+   box-shadow: 0 0 0 4px #777, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+
+.tv2 {
+   background: #000;
+   color: #FFF;
+   border: 1px solid #444;
+   box-shadow:0 0 0 4px #333, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+.flatscreen {
+   background: #000;
+   color: #FFF;
+   border: 2px solid #333;
+   box-shadow:0 0 0 1px #777, 2px 2px 4px 2px rgba(8, 8, 0, 0.6);
+   text-shadow: -1px -1px #333;
+}
+
+.punchout {
+    padding:30px;
+    color:beige;
+    background-color:#BBB;
+    margin 10px;
+    padding:10px;
+    box-shadow:inset 0 0 10px #111;
+    text-shadow: 1px 2px 2px #000;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	
+	border-bottom: 5px solid black;
+}
+
+.arrow-down {
+	width: 40px; 
+	height: 40px; 
+	border-left:inset 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #f00;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	
+	border-left: 60px solid green;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 222px; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-right:10px solid blue; 
+}
+
+.arrow-up2 {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	box-shadow:0 0 0 4px #333;
+	border-bottom: 5px solid black;
+}
+
+.arrow-down2 {
+	width: 100%; 
+	height: 100%; 
+	border-left:inset 20px solid transparent;
+	border-right: 20px solid transparent;
+	box-shadow:0 0 10px #111;  
+	border-top: 20px solid #444;
+}
+
+.arrow-right2 {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	box-shadow:0 0 0 4px #333;
+	border-left: 60px solid green;
+}
+
+.arrow-left2 {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	box-shadow:0 0 0 4px #333;
+	border-right:10px solid blue; 
+}

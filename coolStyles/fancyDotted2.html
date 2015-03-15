@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+    <link rel='stylesheet' href='css/fancyDotted2.css' type='text/css'/>
+    
+    <!--[if IE]>
+<style type="text/css">
+  .disp {
+    zoom: 1;     /* triggers hasLayout */
+    }  /* Only IE can see inside the conditional comment
+    and read this CSS rule. Don't ever use a normal HTML
+    comment inside the CC or it will close prematurely. */
+</style>
+<![endif]-->
+</head>
+<body>
+    <div class='disp' style='width:90%;background-color:#000;'>
+  <div>  
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateBoth('p1a', 45, 1650, true)">animateBoth()</button>
+     </p>
+    <p id='p1a' class='stitched21 arrow-right31'></p>
+ </div> 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateRight('p1b', 45, 1955, true)">animateRight()</button>
+     </p>
+    <p id='p1b' class='stitched21 arrow-right31'></p>
+ </div> 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateLeft('p1c', 45, 1355, true)">animateLeft()</button>
+     </p>
+    <p id='p1c' class='stitched21 arrow-right31'></p>
+ </div>
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateBoth('p1d', 45, 1650, true)">animateBoth()</button>
+     </p>
+    <p id='p1d' class='stitched21 arrow-right31'>sadf</p>
+ </div> 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateRight('p1e', 45, 1955, true)">animateRight()</button>
+     </p>
+    <p id='p1e' class='stitched21 arrow-right31'>asd</p>
+ </div> 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateLeft('p1f', 45, 1355, true)">animateLeft()</button>
+     </p>
+    <p id='p1f' class='stitched21 arrow-right31'></p></p>
+ </div> 
+ 
+ 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateBoth('div1a', 45, 1050, true)">animateBoth()</button>
+     </p>
+    <div id='div1a' class='stitched21 arrow-right31'></div>
+ </div> 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateRight('div1b', 145, 1955, true)">animateRight()</button>
+     </p>
+    <div id='div1b' class='stitched21 arrow-right31'></div>
+ </div> 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateLeft('div1c', 45, 1355, true)">animateLeft()</button>
+     </p>
+    <div id='div1c' class='stitched21 arrow-right31'></div>
+ </div> 
+    
+    
+    
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateBoth('div1d', 45, 1050, true)">animateBoth()</button>
+     </p>
+    <div id='div1d' class='stitched21 arrow-right31'><div id='div1d' class='stitched21 arrow-right31'></div></div>
+ </div> 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateRight('div1e', 145, 1955, true)">animateRight()</button>
+     </p>
+    <div id='div1e' class='stitched21 arrow-right31'><div id='div1e' class='stitched21 arrow-right31'></div></div>
+ </div> 
+ <div class='disp'>          
+    <p class='blend'>
+        <button onclick="animateLeft('div1f', 45, 1355, true)">animateLeft()</button>
+     </p>
+    <div id='div1f' class='stitched21 arrow-right31'><div id='div1f' class='stitched21 arrow-right31'></div>
+ </div>  
+  </div>
+        </div>
+    
+    
+<script>
+    function variableState(a, b, c, d){
+        alert(" " + a + ", " + b + ", " +  c + ", " +  d);
+    }
+        
+    function animateBoth(targetId, count, max, countingUp){
+        var el = document.getElementById(targetId);
+        
+        if(countingUp == true){
+            if(count < max && countingUp == true){
+                count += 5;
+                el.style.borderLeft = '' + count + 'px dashed #333';
+                el.style.borderRight = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateBoth(targetId, count, max, countingUp)}, 10);
+            }else if(count == max){
+                countingUp = false;
+                count -= 5;
+                el.style.borderLeft = '' + count + 'px dashed #333';
+                el.style.borderRight = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateBoth(targetId, count, max, countingUp)}, 10);
+            }
+        }else{
+            if(count < max && count > 44 && countingUp == false){
+                count -= 5;
+                el.style.borderLeft = '' + count + 'px dashed #333';
+                el.style.borderRight = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateBoth(targetId, count, max, countingUp)}, 10);
+            }else if(count <= 44){
+                countingUp = true;
+                count += 5;
+                window.setTimeout(function(){animateBoth(targetId, count, max, countingUp)}, 10);
+            }else{
+            }
+        }
+    }
+ 
+    function animateRight(targetId, count, max, countingUp){
+        var el = document.getElementById(targetId);
+        
+        if(countingUp == true){
+            if(count < max && countingUp == true){
+                count += 5;
+                el.style.borderRight = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateRight(targetId, count, max, countingUp)}, 10);
+            }else if(count == max){
+                countingUp = false;
+                count -= 5;
+                el.style.borderRight = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateRight(targetId, count, max, countingUp)}, 10);
+            }
+        }else{
+            if(count < max && count > 44 && countingUp == false){
+                count -= 5;
+                el.style.borderRight = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateRight(targetId, count, max, countingUp)}, 10);
+            }else if(count <= 44){
+                countingUp = true;
+                count += 5;
+                window.setTimeout(function(){animateRight(targetId, count, max, countingUp)}, 10);
+            }else{
+            }
+        }
+    }
+  
+    function animateLeft(targetId, count, max, countingUp){
+        var el = document.getElementById(targetId);
+        
+        if(countingUp == true){
+            if(count < max && countingUp == true){
+                count += 5;
+                el.style.borderLeft = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateLeft(targetId, count, max, countingUp)}, 10);
+            }else if(count == max){
+                countingUp = false;
+                count -= 5;
+                el.style.borderLeft = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateLeft(targetId, count, max, countingUp)}, 10);
+            }
+        }else{
+            if(count < max && count > 44 && countingUp == false){
+                count -= 5;
+                el.style.borderLeft = '' + count + 'px dashed #333';
+                window.setTimeout(function(){animateLeft(targetId, count, max, countingUp)}, 10);
+            }else if(count <= 44){
+                countingUp = true;
+                count += 5;
+                window.setTimeout(function(){animateLeft(targetId, count, max, countingUp)}, 10);
+            }else{
+            }
+        }
+    }
+        
+</script>
+    
+</body>
+</html>
